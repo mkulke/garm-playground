@@ -1,0 +1,44 @@
+{
+	"parameters": {
+		"GithubToken": {
+			"reference": {
+				"keyVault": {
+					"id": "/subscriptions/***/resourceGroups/***/providers/Microsoft.KeyVault/vaults/garm"
+				},
+				"secretName": "github-token"
+			}
+		},
+		"GithubWebhookSecret": {
+			"reference": {
+				"keyVault": {
+					"id": "/subscriptions/***/resourceGroups/***/providers/Microsoft.KeyVault/vaults/garm"
+				},
+				"secretName": "github-webhook-secret"
+			}
+		},
+		"GarmJwtSecret": {
+			"reference": {
+				"keyVault": {
+					"id": "/subscriptions/***/resourceGroups/***/providers/Microsoft.KeyVault/vaults/garm"
+				},
+				"secretName": "garm-jwt-secret"
+			}
+		},
+		"GarmDbPassphrase": {
+			"reference": {
+				"keyVault": {
+					"id": "/subscriptions/***/resourceGroups/***/providers/Microsoft.KeyVault/vaults/garm"
+				},
+				"secretName": "garm-db-passphrase"
+			}
+		},
+		"GarmAdminPw": {
+			"reference": {
+				"keyVault": {
+					"id": "/subscriptions/***/resourceGroups/***/providers/Microsoft.KeyVault/vaults/garm"
+				},
+				"secretName": "garm-admin-pw"
+			}
+		}
+	}
+}

@@ -2,7 +2,7 @@ name: Docker
 on:
   push:
     branches:
-    - mkulke/ghcr
+    - main
 jobs:
   Build-and-Push-Image:
     runs-on: ubuntu-latest
