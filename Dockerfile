@@ -29,10 +29,6 @@ COPY --from=builder /build/garm /usr/bin
 COPY --from=builder /build/garm-cli /usr/bin
 COPY --from=builder /build/garm-provider-azure /usr/bin
 
-COPY ./config.toml.tmpl /etc/garm
-COPY ./azure-config.toml.tmpl /etc/garm
-
+COPY ./config.toml.tmpl /
+COPY ./azure-config.toml.tmpl /
 COPY ./init.sh /
-COPY ./bootstrap.sh /
-
-CMD ["/init.sh"]
