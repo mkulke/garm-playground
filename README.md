@@ -15,7 +15,7 @@ The application is deployed as an [ACI](https://azure.microsoft.com/en-us/produc
 ### Requirements
 
 - A Resource Group
-- A user assigned identity, which has role assignments that allow read/write operation for VM, Network resources and Resource Groups. The managed `Contributor` Role is be able to do that, but you can apply more granular definitions. The resource needs to created in the resource group
+- A user assigned identity, which has role assignments that allow read/write operation for VM, Network resources and Resource Groups. The managed `Contributor` Role is able to do that, but you can apply more granular definitions. The resource needs to created in the resource group
 - A Storage Account holding to holding the state of the application via file shares.
 - A Key Vault keeping application secrets, refer to `parameters.json` for a list.
 
