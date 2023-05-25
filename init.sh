@@ -2,6 +2,11 @@
 
 set -euo pipefail
 
+if [ -f /etc/garm/db.sqlite ]; then
+	echo "database already exists, skipping init"
+	exit 0
+fi
+
 : "${GARM_HOSTNAME:?required}"
 : "${GARM_JWT_SECRET:?required}"
 : "${GARM_DB_PASSPHRASE:?required}"
